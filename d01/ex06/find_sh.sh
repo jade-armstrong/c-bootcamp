@@ -6,8 +6,8 @@
 #    By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/07 14:43:57 by jarmstro          #+#    #+#              #
-#    Updated: 2020/07/07 14:46:00 by jarmstro         ###   ########.fr        #
+#    Updated: 2020/07/07 15:33:00 by jarmstro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
-find . -iname "*.sh" | cut -d "/" -f 3 | cut -d "." -f 1
+find . -iname "*.sh"| rev | cut -d "/" -f 1 | rev | cut -d "." -f 1
