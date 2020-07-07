@@ -6,9 +6,9 @@
 #    By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/07 12:38:42 by jarmstro          #+#    #+#              #
-#    Updated: 2020/07/07 12:43:24 by jarmstro         ###   ########.fr        #
+#    Updated: 2020/07/07 12:52:08 by jarmstro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!/bin/bash
+#!/bin/sh
 echo "Jade Armstrong"
