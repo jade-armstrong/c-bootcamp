@@ -18,7 +18,7 @@ void ft_print_chars(char a, char b, char c)
 	ft_putchar(b);
 	ft_putchar(c);
 
-	if (a != '9' or b != '9' or c != '9')
+	if (a != '7' || b != '8' || c != '9')
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
@@ -29,11 +29,11 @@ void ft_print_comb(void)
 {
 	char a = '0', b = '0', c = '0';
 
-	while (a < '9')
+	while (a <= '9')
 	{
-		while (b < '9')
+		while (b <= '9')
 		{
-			while (c < '9')
+			while (c <= '9')
 			{
 				if (a < b && b < c)
 					ft_print_chars(a, b, c);
