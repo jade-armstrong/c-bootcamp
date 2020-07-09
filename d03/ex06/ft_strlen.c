@@ -14,10 +14,9 @@ int ft_strlen(char *str)
 {
 	int strlen = 0;
 
-	while (*str)
+	while (str[strlen] != '\0')
 	{
 		strlen++;
-		str++;
 	}
 
 	return strlen;
