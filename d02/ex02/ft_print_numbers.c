@@ -16,5 +16,5 @@ void ft_print_alphabet(void)
 {
 	int count = 48;
 	while (count <= 57)
-		ft_putchar(i++);
+		ft_putchar(count++);
 }
