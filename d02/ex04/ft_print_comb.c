@@ -6,9 +6,11 @@
 /*   By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:28:02 by jarmstro          #+#    #+#             */
-/*   Updated: 2020/07/09 12:07:58 by jarmstro         ###   ########.fr       */
+/*   Updated: 2020/07/09 13:14:36 by jarmstro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void ft_putchar(char c);
 
 void ft_print_chars(char a, char b, char c)
 {
