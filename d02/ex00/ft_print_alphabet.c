@@ -6,13 +6,13 @@
 /*   By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 10:32:21 by jarmstro          #+#    #+#             */
-/*   Updated: 2020/07/09 10:33:32 by jarmstro         ###   ########.fr       */
+/*   Updated: 2020/07/09 11:13:23 by jarmstro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void ft_print_alphabet(void)
 {
-  int i = 97;
-  while (i >= 97 && i <= 122)
+  int count = 97;
+  while (count <= 122)
     ft_putchar(i++);
 }
