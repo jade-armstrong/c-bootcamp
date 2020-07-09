@@ -21,3 +21,4 @@ void ft_swap(int *a, int *b)
 	*b = x;
 	*a = y;
 }
+
