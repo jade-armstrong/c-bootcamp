@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c);
+void ft_putchar(char c)
 
 void ft_print_alphabet(void)
 {
 	int count = 97;
 	while (count <= 122)
-		ft_putchar(i++);
+		ft_putchar(count++);
 }
