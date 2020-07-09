@@ -27,14 +27,14 @@ void ft_print_comb2(void)
 			{
 				while (d <= '9')
 				{
-					if ((a < c) or (a = c && b < d))
+					if ((a < c) || (a == c && b < d))
 					{	
 						ft_putchar(a);
 						ft_putchar(b);
 						ft_putchar(' ');
 						ft_putchar(c);
 						ft_putchar(d);
-						if (a != '9' or b != '9' or c != '9' or d != '9')
+						if (a != '9' || b != '9' || c != '9' || d != '9')
 						{
 							ft_putchar(',');
 							ft_putchar(' ');
@@ -48,5 +48,7 @@ void ft_print_comb2(void)
 			c = '0';
 			b++;
 		}
+    b = '0';
+    a++;
 	}
 }	
