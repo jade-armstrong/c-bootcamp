@@ -6,33 +6,55 @@
 /*   By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 15:34:40 by jarmstro          #+#    #+#             */
-/*   Updated: 2020/07/09 15:55:02 by jarmstro         ###   ########.fr       */
+/*   Updated: 2020/07/11 16:33:14 by jarmstro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
+
+void ft_putchar(char c)
+{
+	write(1,&c,1);
+}
+
+void ft_putstr(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
+
 
 char *ft_strrev(char *str)
 {
 	int strlen = 0;
-	i = 0;
-	count = 0;
-	char *revstr;
+	int i = 0;
+	char *strrev = str;
 
-	while (*str)
+	while (str[strlen] != '\0')
 	{
 		strlen++;
-		str++;
 	}
+	
+	strlen--;
 
-	i = strlen;
-
-	while (i >=  0)
+	while (strlen  >= 0)
 	{
-		revstr[count] = str[i]
-			i--;
-		count++;
+		strrev[i] = str[strlen];
+		i++;
+		strlen--;
 	}
 
-	*str = *revstr;
+	return strrev;
+}
 
-	return *str;
+int main(void)
+{
+	char *str = "abcdefg";
+	ft_putstr(ft_strrev(str));
+	return 0;
 }
