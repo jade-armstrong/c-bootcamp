@@ -7,12 +7,10 @@ int ft_sqrt(int nb)
     sqrt++;
   }
 
-  if (sqrt < 0)
-  {
-    return 0;
-  }
-  else
+  if (sqrt*sqrt == nb)
   {
     return sqrt;
   }
+  else
+    return 0;
 }
