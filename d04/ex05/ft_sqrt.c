@@ -7,5 +7,12 @@ int ft_sqrt(int nb)
     sqrt++;
   }
 
-  return sqrt;
+  if (sqrt < 0)
+  {
+    return 0;
+  }
+  else
+  {
+    return sqrt;
+  }
 }
