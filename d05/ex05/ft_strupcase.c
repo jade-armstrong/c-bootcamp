@@ -19,32 +19,42 @@ void ft_putchar(char c)
 
 void ft_putstr(char *str)
 {
-	while (*str)
-		ft_putchar(*str++);
+
+  int i = 0;
+	while (str[i] != 0)
+  {
+		ft_putchar(str[i]);
+    i++;
+  }
 }
 
 char *ft_strupcase(char *str)
 {
-	while(*str != '\0')
+  int i = 0;
+	while(str[i] != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			*str = *str - 'a' + 'A';
+			str[i] = str[i] - 'a' + 'A';
 		}
-		str++;
+		i++;
 	}
 	return str;
 }
 
 int main()
 {
-	char *s1 = "Hello World";
-	char *s2 = "strupcase";
-	char *s3 = "1234Upcase5678";
-	ft_putstr(ft_strupcase(s1));
-	ft_putchar('\n');
-	ft_putstr(ft_strupcase(s2));
-	ft_putchar('\n');
-	ft_putstr(ft_strupcase(s3));
+	char s1[] = "Hello World";
+	char s2[] = "strupcase";
+	char s3[] = "1234Upcase5678";
+	ft_strupcase(s1);
+  ft_putstr(s1);
+  ft_putchar('\n');
+  ft_strupcase(s2);
+  ft_putstr(s2);
+  ft_putchar('\n');
+  ft_strupcase(s3);
+  ft_putstr(s3);
+  ft_putchar('\n');
 	return 0;
 }
