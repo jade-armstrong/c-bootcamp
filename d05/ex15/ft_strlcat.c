@@ -1,3 +1,16 @@
+
+
+unsigned int ft_strlcat(char *dest, char *src, unsigned int size)
+{
+	int i = 0;
+	int c = 0;
+  unsigned int strlength = 0;
+	
+	while(dest[i] != '\0')
+  {
+    i++;
+    strlength++;
+  }
 	
 	while(src[c] != '\0' && strlength < (size - 1))
 	{
