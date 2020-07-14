@@ -6,7 +6,7 @@
 /*   By: jarmstro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 13:10:56 by jarmstro          #+#    #+#             */
-/*   Updated: 2020/07/14 13:20:03 by jarmstro         ###   ########.fr       */
+/*   Updated: 2020/07/14 13:42:06 by jarmstro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void ft_putstr(char *str)
 
 char *ft_strupcase(char *str)
 {
-	while(*str)
+	while(*str != '\0')
 	{
-		if (*str > 96 && *str < 123)
+		if (*str >= 'a' && *str <= 'z')
 		{
-			*str = *str - 32;
+			*str = *str - 'a' + 'A';
 		}
 		str++;
 	}
